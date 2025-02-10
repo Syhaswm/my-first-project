@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 400px;
+        height: 400px;
+        background-color: skyblue;
+        /* 定位 relative 相对定位 */
+        position: relative;
+      }
+      .one,
+      .two {
+        width: 400px;
+        height: 400px;
+        background-color: tomato;
+        /* 定位 absolute 绝对定位 */
+        position: absolute;
+      }
+      .two {
+        background-color: violet;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="one"></div>
+      <div class="two"></div>
+    </div>
+  </body>
+</html>

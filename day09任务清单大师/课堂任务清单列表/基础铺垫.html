@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 简化版 -->
+     <ul>
+     </ul>
+     <button>点击+1</button>
+
+     <!-- js内容 -->
+     <script>
+        // 1.获取节点
+        let ul = document.querySelector("ul");
+        let btn = document.querySelector("button");
+
+        // 给btn绑定点击事件
+        btn.onclick = function(){
+            // 点击一次生成一个li子元素
+            // 1.创建一个li标签
+            let li = document.createElement("li");
+            // 2.对li添加内容
+            li.innerHTML = "<h1>一级标题</h1>";
+            // 3.将内容添加到ul标签
+            ul.append(li);
+        }
+     </script>
+
+     <!-- 标签 -->
+      
+</body>
+</html>

@@ -1,0 +1,30 @@
+.box {
+  /* 相对定位 */
+  position: relative;
+  left: 50%;
+  top: 500px;
+  transform: rotate(30deg);
+}
+
+img {
+  width: 300px;
+  /* 绝对定位 */
+  position: absolute;
+  /* 旋转的中心点 */
+  transform-origin: right bottom;
+  /* 加上过渡 */
+  transition: all 1s;
+}
+
+.box:hover .one {
+  /* 鼠标悬停的时候样式发生更改，第一三四张发生角度的变化,而第二张保持不变 */
+  transform: rotate(-30deg);
+}
+.box:hover .three {
+  /* 鼠标悬停的时候样式发生更改，第一三四张发生角度的变化,而第二张保持不变 */
+  transform: rotate(30deg);
+}
+.box:hover .four {
+  /* 鼠标悬停的时候样式发生更改，第一三四张发生角度的变化,而第二张保持不变 */
+  transform: rotate(60deg);
+}

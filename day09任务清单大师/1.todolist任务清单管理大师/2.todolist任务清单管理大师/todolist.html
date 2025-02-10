@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>任务管理清单大师—让每项任务都井井有条</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="shortcut icon" href="./damotouicon.ico" type="image/x-icon" />
+    <style></style>
+  </head>
+
+  <body>
+    <header>
+      <section>
+        <label for="title">ToDoList</label>
+        <input
+          type="text"
+          id="title"
+          name="title"
+          placeholder="添加事项"
+          required="required"
+          autocomplete="off"
+        />
+      </section>
+    </header>
+    <section>
+      <h2>今日事项 <span id="todocount">0</span></h2>
+      <!-- 有序列表 -->
+      <ol id="todolist" class="demo-box">
+        <!-- <li>
+          <p>1</p>
+          <a href="javascript:;" onclick="delet(this)"></a>
+        </li>
+        <li>
+          <p>2</p>
+          <a href="javascript:;" onclick="delet(this)"></a>
+        </li> -->
+      </ol>
+    </section>
+    <footer>Copyright &copy; 阿云~~</footer>
+
+    <script src="./todolist.js"></script>
+  </body>
+</html>
